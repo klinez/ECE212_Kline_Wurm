@@ -1,0 +1,284 @@
+
+*** Running vivado
+    with args -log dig_clock_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dig_clock_top.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source dig_clock_top.tcl -notrace
+Command: synth_design -top dig_clock_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 28880
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1140.820 ; gain = 31.898
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'dig_clock_top' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/project/Lab 02/Lab 02.srcs/sources_1/new/dig_clock_top.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'dig_clock' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/dig_clock.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Users/klinez/Downloads/lab02-Noah/lab02/RTL/debouce.sv:13]
+	Parameter CLKPD_NS bound to: 10 - type: integer 
+	Parameter CLKFREQ bound to: 100000000 - type: integer 
+	Parameter DEBOUNCE_MS bound to: 10 - type: integer 
+	Parameter CTRBITS bound to: 20 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (1#1) [C:/Users/klinez/Downloads/lab02-Noah/lab02/RTL/debouce.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'single_pulser' [C:/Users/klinez/Downloads/lab02-Noah/lab02/RTL/single_pulser.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'single_pulser' (2#1) [C:/Users/klinez/Downloads/lab02-Noah/lab02/RTL/single_pulser.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'period_enb' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/period_enb.sv:20]
+	Parameter PERIOD_MS bound to: 1000 - type: integer 
+	Parameter PERIOD_US bound to: 1000000 - type: integer 
+	Parameter PERIOD_NS bound to: 1000000000 - type: integer 
+	Parameter CLKFREQ_MHZ bound to: 100 - type: integer 
+	Parameter CLKPD_NS bound to: 10 - type: integer 
+	Parameter PERIOD_COUNT_LIMIT bound to: 100000000 - type: integer 
+	Parameter PERIOD_COUNT_BITS bound to: 27 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'period_enb' (3#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/period_enb.sv:20]
+WARNING: [Synth 8-7071] port 'clr' of module 'period_enb' is unconnected for instance 'U_per' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/dig_clock.sv:40]
+WARNING: [Synth 8-7023] instance 'U_per' of module 'period_enb' has 4 connections declared, but only 3 given [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/dig_clock.sv:40]
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/counter.sv:11]
+	Parameter MOD bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter' (4#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/counter.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized0' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/counter.sv:11]
+	Parameter MOD bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized0' (4#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/counter.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'hr_ctr' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/project/Lab 02/Lab 02.srcs/sources_1/new/hr_ctr.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'hr_ctr' (5#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/project/Lab 02/Lab 02.srcs/sources_1/new/hr_ctr.sv:23]
+WARNING: [Synth 8-689] width (4) of port connection 'h0' does not match port width (7) of module 'hr_ctr' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/dig_clock.sv:45]
+INFO: [Synth 8-6155] done synthesizing module 'dig_clock' (6#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/dig_clock.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'sevenseg_ctl' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/sevenseg_ctl.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'period_enb__parameterized0' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/period_enb.sv:20]
+	Parameter PERIOD_MS bound to: 1 - type: integer 
+	Parameter PERIOD_US bound to: 1000 - type: integer 
+	Parameter PERIOD_NS bound to: 1000000 - type: integer 
+	Parameter CLKFREQ_MHZ bound to: 100 - type: integer 
+	Parameter CLKPD_NS bound to: 10 - type: integer 
+	Parameter PERIOD_COUNT_LIMIT bound to: 100000 - type: integer 
+	Parameter PERIOD_COUNT_BITS bound to: 17 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'period_enb__parameterized0' (6#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/period_enb.sv:20]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized1' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/counter.sv:11]
+	Parameter MOD bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized1' (6#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/counter.sv:11]
+WARNING: [Synth 8-689] width (3) of port connection 'q' does not match port width (4) of module 'counter__parameterized1' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/sevenseg_ctl.sv:34]
+WARNING: [Synth 8-7071] port 'Carry' of module 'counter' is unconnected for instance 'U_CT' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/sevenseg_ctl.sv:34]
+WARNING: [Synth 8-7023] instance 'U_CT' of module 'counter' has 5 connections declared, but only 4 given [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/sevenseg_ctl.sv:34]
+INFO: [Synth 8-6157] synthesizing module 'dec_3_8_n' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/dec_3_8_n.sv:11]
+INFO: [Synth 8-226] default block is never used [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/dec_3_8_n.sv:19]
+INFO: [Synth 8-6155] done synthesizing module 'dec_3_8_n' (7#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/dec_3_8_n.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'mux8' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/mux8.sv:11]
+	Parameter W bound to: 7 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/mux8.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'mux8' (8#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/mux8.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'sevenseg_ext_n' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/sevenseg_ext_n.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'sevenseg_ext_n' (9#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/sevenseg_ext_n.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'sevenseg_ctl' (10#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/sevenseg_ctl.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'dig_clock_top' (11#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/project/Lab 02/Lab 02.srcs/sources_1/new/dig_clock_top.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1195.191 ; gain = 86.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1195.191 ; gain = 86.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1195.191 ; gain = 86.270
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1195.191 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/constraints/sevenseg_ctl_constraint.xdc]
+Finished Parsing XDC File [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/constraints/sevenseg_ctl_constraint.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/constraints/sevenseg_ctl_constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/dig_clock_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/dig_clock_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1309.711 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1309.711 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1309.711 ; gain = 200.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1309.711 ; gain = 200.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1309.711 ; gain = 200.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1309.711 ; gain = 200.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 5     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                7 Bit    Registers := 3     
+	                4 Bit    Registers := 5     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   8 Input    8 Bit        Muxes := 1     
+	  16 Input    7 Bit        Muxes := 1     
+	  15 Input    7 Bit        Muxes := 1     
+	  12 Input    7 Bit        Muxes := 5     
+	   2 Input    7 Bit        Muxes := 7     
+	   3 Input    7 Bit        Muxes := 2     
+	  17 Input    7 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1309.711 ; gain = 200.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1309.711 ; gain = 200.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 1315.629 ; gain = 206.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 1317.914 ; gain = 208.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1323.703 ; gain = 214.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1323.703 ; gain = 214.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1323.703 ; gain = 214.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1323.703 ; gain = 214.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1323.703 ; gain = 214.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1323.703 ; gain = 214.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    24|
+|3     |LUT1   |    11|
+|4     |LUT2   |    12|
+|5     |LUT3   |    16|
+|6     |LUT4   |    17|
+|7     |LUT5   |    22|
+|8     |LUT6   |    24|
+|9     |MUXF7  |     1|
+|10    |FDRE   |   120|
+|11    |FDSE   |     2|
+|12    |IBUF   |     4|
+|13    |OBUF   |    16|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1323.703 ; gain = 214.781
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1323.703 ; gain = 100.262
+Synthesis Optimization Complete : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1323.703 ; gain = 214.781
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1335.746 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 25 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1335.766 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+45 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:21 . Memory (MB): peak = 1335.766 ; gain = 226.844
+INFO: [Common 17-1381] The checkpoint 'C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/project/Lab 02/Lab 02.runs/synth_1/dig_clock_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file dig_clock_top_utilization_synth.rpt -pb dig_clock_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 21 08:18:57 2023...
