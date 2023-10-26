@@ -1,0 +1,718 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Oct 12 08:04:20 2023
+# Process ID: 19960
+# Current directory: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5456 C:\Users\klinez\ECE212_Kline_Wurm\Lab 03\project\Lab03\Lab03.xpr
+# Log file: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/vivado.log
+# Journal file: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1087.703 ; gain = 0.000
+update_compile_order -fileset sources_1
+WARNING: [Common 17-9] Error reading message records.
+WARNING: [Common 17-9] Error reading message records.
+WARNING: [Common 17-9] Error reading message records.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 12 08:28:18 2023...
+tream -jobs 6
+[Thu Oct 12 08:07:45 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1/runme.log
+[Thu Oct 12 08:07:45 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-16:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1091.738 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AE2530A
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/lab03_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/lab03_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 12 08:12:12 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1/runme.log
+[Thu Oct 12 08:12:12 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/lab03_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 12 08:15:01 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1/runme.log
+[Thu Oct 12 08:15:01 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/lab03_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 12 08:17:06 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1/runme.log
+[Thu Oct 12 08:17:06 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 12 08:18:40 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1/runme.log
+[Thu Oct 12 08:18:40 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/lab03_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+undo
+INFO: [Common 17-17] undo 'set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/lab03_top.bit} [get_hw_devices xc7a100t_0]'
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 12 08:22:58 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1/runme.log
+[Thu Oct 12 08:22:58 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/lab03_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 12 08:26:40 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1/runme.log
+[Thu Oct 12 08:26:40 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/lab03_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 12 08:33:35 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1/runme.log
+[Thu Oct 12 08:33:35 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/lab03_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 12 08:37:55 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1/runme.log
+[Thu Oct 12 08:37:55 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 12 08:48:00 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1/runme.log
+[Thu Oct 12 08:48:00 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/lab03_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 12 08:50:17 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1/runme.log
+[Thu Oct 12 08:50:17 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/lab03_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 12 08:52:08 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1/runme.log
+[Thu Oct 12 08:52:08 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/lab03_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 12 08:54:53 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1/runme.log
+[Thu Oct 12 08:54:53 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/lab03_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 12 08:57:24 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1/runme.log
+[Thu Oct 12 08:57:24 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/lab03_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 12 09:02:01 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1/runme.log
+[Thu Oct 12 09:02:01 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/lab03_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 12 09:06:16 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1/runme.log
+[Thu Oct 12 09:06:16 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/lab03_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 12 09:12:16 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1/runme.log
+[Thu Oct 12 09:12:16 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/lab03_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 12 09:20:11 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1/runme.log
+[Thu Oct 12 09:20:11 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/lab03_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 12 09:38:26 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1/runme.log
+[Thu Oct 12 09:38:26 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 12 09:38:55 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1/runme.log
+[Thu Oct 12 09:38:55 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/lab03_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: lab03_top
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 3349.102 ; gain = 260.086
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'lab03_top' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.srcs/sources_1/new/lab03_top.sv:23]
+INFO: [Synth 8-638] synthesizing module 'TempSensorCtl' [C:/Users/klinez/Downloads/TempSensorCtl.vhd:58]
+	Parameter CLOCKFREQ bound to: 100 - type: integer 
+	Parameter CLOCKFREQ bound to: 100 - type: integer 
+	Parameter ATTEMPT_SLAVE_UNBLOCK bound to: 1 - type: bool 
+INFO: [Synth 8-3491] module 'TWICtl' declared at 'C:/Users/klinez/Downloads/TWICtl.vhd:68' bound to instance 'Inst_TWICtl' of component 'TWICtl' [C:/Users/klinez/Downloads/TempSensorCtl.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'TWICtl' [C:/Users/klinez/Downloads/TWICtl.vhd:132]
+	Parameter CLOCKFREQ bound to: 100 - type: integer 
+	Parameter ATTEMPT_SLAVE_UNBLOCK bound to: 1 - type: bool 
+INFO: [Synth 8-226] default block is never used [C:/Users/klinez/Downloads/TWICtl.vhd:357]
+INFO: [Synth 8-226] default block is never used [C:/Users/klinez/Downloads/TWICtl.vhd:375]
+INFO: [Synth 8-226] default block is never used [C:/Users/klinez/Downloads/TWICtl.vhd:393]
+INFO: [Synth 8-226] default block is never used [C:/Users/klinez/Downloads/TWICtl.vhd:411]
+INFO: [Synth 8-226] default block is never used [C:/Users/klinez/Downloads/TWICtl.vhd:429]
+INFO: [Synth 8-226] default block is never used [C:/Users/klinez/Downloads/TWICtl.vhd:447]
+WARNING: [Synth 8-614] signal 'timeOutCnt' is read in the process but is not in the sensitivity list [C:/Users/klinez/Downloads/TWICtl.vhd:500]
+INFO: [Synth 8-256] done synthesizing module 'TWICtl' (1#1) [C:/Users/klinez/Downloads/TWICtl.vhd:132]
+INFO: [Synth 8-226] default block is never used [C:/Users/klinez/Downloads/TempSensorCtl.vhd:328]
+WARNING: [Synth 8-614] signal 'initA' is read in the process but is not in the sensitivity list [C:/Users/klinez/Downloads/TempSensorCtl.vhd:323]
+INFO: [Synth 8-256] done synthesizing module 'TempSensorCtl' (2#1) [C:/Users/klinez/Downloads/TempSensorCtl.vhd:58]
+INFO: [Synth 8-6157] synthesizing module 'tdisplay' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.srcs/sources_1/new/tdisplay.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'tconvert' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.srcs/sources_1/new/tconvert.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'tconvert' (3#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.srcs/sources_1/new/tconvert.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'conv_sgnmag' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.srcs/sources_1/new/conv_sgnmag.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'conv_sgnmag' (4#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.srcs/sources_1/new/conv_sgnmag.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'round' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.srcs/sources_1/new/round.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'round' (5#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.srcs/sources_1/new/round.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'dbl_dabble_ext' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:15]
+INFO: [Synth 8-251] dbl_dabble input: x [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:22]
+INFO: [Synth 8-251] add3o 4 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 5 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 6 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 7 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 7 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:33]
+INFO: [Synth 8-251] add3o 8 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 8 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:33]
+INFO: [Synth 8-251] add3o 9 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 9 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:33]
+INFO: [Synth 8-251] add3o 10 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 10 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:33]
+INFO: [Synth 8-251] add3o 10 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:37]
+INFO: [Synth 8-251] add3o 11 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 11 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:33]
+INFO: [Synth 8-251] add3o 11 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:37]
+INFO: [Synth 8-251] add3o 12 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 12 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:33]
+INFO: [Synth 8-251] add3o 12 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:37]
+INFO: [Synth 8-251] add3o 13 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 13 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:33]
+INFO: [Synth 8-251] add3o 13 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:37]
+INFO: [Synth 8-251] add3o 13 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:41]
+INFO: [Synth 8-251] result    x    x   x   x [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:45]
+INFO: [Synth 8-6155] done synthesizing module 'dbl_dabble_ext' (6#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:15]
+INFO: [Synth 8-6155] done synthesizing module 'tdisplay' (7#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.srcs/sources_1/new/tdisplay.sv:23]
+WARNING: [Synth 8-689] width (1) of port connection 'tx10_sign' does not match port width (7) of module 'tdisplay' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.srcs/sources_1/new/lab03_top.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'sevenseg_ctl' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/sevenseg_ctl.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'period_enb' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/period_enb.sv:20]
+	Parameter PERIOD_MS bound to: 1 - type: integer 
+	Parameter PERIOD_US bound to: 1000 - type: integer 
+	Parameter PERIOD_NS bound to: 1000000 - type: integer 
+	Parameter CLKFREQ_MHZ bound to: 100 - type: integer 
+	Parameter CLKPD_NS bound to: 10 - type: integer 
+	Parameter PERIOD_COUNT_LIMIT bound to: 100000 - type: integer 
+	Parameter PERIOD_COUNT_BITS bound to: 17 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'period_enb' (8#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/period_enb.sv:20]
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/counter.sv:11]
+	Parameter MOD bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter' (9#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/counter.sv:11]
+WARNING: [Synth 8-7071] port 'Carry' of module 'counter' is unconnected for instance 'U_CT' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/sevenseg_ctl.sv:40]
+WARNING: [Synth 8-7023] instance 'U_CT' of module 'counter' has 5 connections declared, but only 4 given [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/sevenseg_ctl.sv:40]
+INFO: [Synth 8-6157] synthesizing module 'dec_3_8_n' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/dec_3_8_n.sv:11]
+INFO: [Synth 8-226] default block is never used [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/dec_3_8_n.sv:19]
+INFO: [Synth 8-6155] done synthesizing module 'dec_3_8_n' (10#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/dec_3_8_n.sv:11]
+WARNING: [Synth 8-689] width (4) of port connection 'a' does not match port width (3) of module 'dec_3_8_n' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/sevenseg_ctl.sv:42]
+INFO: [Synth 8-6157] synthesizing module 'mux8' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/mux8.sv:11]
+	Parameter W bound to: 7 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/mux8.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'mux8' (11#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/mux8.sv:11]
+WARNING: [Synth 8-689] width (4) of port connection 'sel' does not match port width (3) of module 'mux8' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/sevenseg_ctl.sv:44]
+INFO: [Synth 8-6157] synthesizing module 'sevenseg_ext_n' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/sevenseg_ext_n.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'sevenseg_ext_n' (12#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/sevenseg_ext_n.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'sevenseg_ctl' (13#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/sevenseg_ctl.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'lab03_top' (14#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.srcs/sources_1/new/lab03_top.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 3401.215 ; gain = 312.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 3419.121 ; gain = 330.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 3419.121 ; gain = 330.105
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 3419.121 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.srcs/constrs_1/new/lab03_constraints.xdc]
+Finished Parsing XDC File [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.srcs/constrs_1/new/lab03_constraints.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3532.680 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 3611.164 ; gain = 522.148
+65 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 3611.164 ; gain = 842.988
+close_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 12 09:55:41 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1/runme.log
+[Thu Oct 12 09:55:41 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/lab03_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 12 10:02:52 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1/runme.log
+[Thu Oct 12 10:02:52 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/lab03_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 12 10:11:49 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1/runme.log
+[Thu Oct 12 10:11:49 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/lab03_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 12 10:15:51 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1/runme.log
+[Thu Oct 12 10:15:51 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/lab03_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 12 10:18:11 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1/runme.log
+[Thu Oct 12 10:18:11 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/runme.log
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 3633.344 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 33 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 4018.504 ; gain = 0.000
+open_run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 4018.504 ; gain = 385.160
+INFO: [Common 17-344] 'open_run' was cancelled
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/lab03_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 12 10:21:38 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1/runme.log
+[Thu Oct 12 10:21:38 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/lab03_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 12 10:25:32 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1/runme.log
+[Thu Oct 12 10:25:32 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/lab03_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 12 10:28:57 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1/runme.log
+[Thu Oct 12 10:28:57 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/lab03_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 12 10:33:33 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1/runme.log
+[Thu Oct 12 10:33:33 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/lab03_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 12 10:36:46 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1/runme.log
+[Thu Oct 12 10:36:46 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/runme.log
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 4018.504 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 33 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 4035.355 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 4035.355 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4035.355 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+close_design
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/lab03_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 12 10:41:10 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1/runme.log
+[Thu Oct 12 10:41:10 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/lab03_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 12 10:45:49 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1/runme.log
+[Thu Oct 12 10:45:49 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/lab03_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 12 10:51:13 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1/runme.log
+[Thu Oct 12 10:51:13 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 12 10:51:34 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1/runme.log
+[Thu Oct 12 10:51:34 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/lab03_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 12 10:54:45 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1/runme.log
+[Thu Oct 12 10:54:45 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/lab03_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 12 10:57:07 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1/runme.log
+[Thu Oct 12 10:57:07 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/runme.log
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 4209.902 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 33 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 4209.902 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 4209.902 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4209.902 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+close_design
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/lab03_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 12 11:02:16 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/synth_1/runme.log
+[Thu Oct 12 11:02:16 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.runs/impl_1/lab03_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 12 11:18:21 2023...
