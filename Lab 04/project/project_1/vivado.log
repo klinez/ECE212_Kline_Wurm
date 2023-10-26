@@ -1,0 +1,527 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Oct 26 08:07:08 2023
+# Process ID: 6312
+# Current directory: C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6784 C:\Users\klinez\ECE212_Kline_Wurm\Lab 04\project\project_1\project_1.xpr
+# Log file: C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/vivado.log
+# Journal file: C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+CRITICAL WARNING: [filemgmt 20-742] The top module "Lab04_top" specified for this project can not be validated. The current project is using automatic hierarchy update mode, and hence a new suitable replacement top will be automatically selected. If this is not desired, please change the hierarchy update mode to one of the manual compile order modes first, and then set top to any desired value.
+Resolution: To switch to manual update order go to the Sources view, right-click on any node in the hierarchy and in the context menu select: 'Hierarchy Update' option 'No Update' or run the following Tcl Command: set_property source_mgmt_mode None [current_project] (which is the Manual Compile Order mode).
+[Thu Oct 26 08:39:19 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/synth_1/runme.log
+[Thu Oct 26 08:39:19 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 26 08:39:56 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/synth_1/runme.log
+[Thu Oct 26 08:39:56 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/impl_1/runme.log
+set_property top Lab04_top [current_fileset]
+update_compile_order -fileset sources_1
+set_property is_enabled false [get_files  {{C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.srcs/sources_1/new/lab03_top.sv}}]
+set_property is_enabled false [get_files  {{C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/project/Lab 02/Lab 02.srcs/sources_1/new/dig_clock_top.sv}}]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 26 08:42:34 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/synth_1/runme.log
+[Thu Oct 26 08:42:34 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 26 08:49:40 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/synth_1/runme.log
+[Thu Oct 26 08:49:40 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-16:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1115.234 ; gain = 9.160
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AE2530A
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/impl_1/Lab04_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/impl_1/Lab04_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 26 09:04:23 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/synth_1/runme.log
+[Thu Oct 26 09:04:23 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/impl_1/Lab04_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 26 09:14:32 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/synth_1/runme.log
+[Thu Oct 26 09:14:32 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/impl_1/Lab04_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 26 09:16:52 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/synth_1/runme.log
+[Thu Oct 26 09:16:52 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/impl_1/Lab04_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 26 09:25:10 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/synth_1/runme.log
+[Thu Oct 26 09:25:10 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 26 09:28:52 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/synth_1/runme.log
+[Thu Oct 26 09:28:52 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 3017.820 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 63 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+open_run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 3022.781 ; gain = 295.676
+INFO: [Common 17-344] 'open_run' was cancelled
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/impl_1/Lab04_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 26 09:32:00 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/synth_1/runme.log
+[Thu Oct 26 09:32:00 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/impl_1/Lab04_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 26 09:50:11 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/synth_1/runme.log
+[Thu Oct 26 09:50:11 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/impl_1/Lab04_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 26 09:52:26 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/synth_1/runme.log
+[Thu Oct 26 09:52:26 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/impl_1/Lab04_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 26 10:16:14 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/synth_1/runme.log
+[Thu Oct 26 10:16:14 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/impl_1/Lab04_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 26 10:22:29 2023] Launched synth_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/synth_1/runme.log
+[Thu Oct 26 10:22:29 2023] Launched impl_1...
+Run output will be captured here: C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.runs/impl_1/Lab04_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: Lab04_top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 3290.840 ; gain = 253.152
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Lab04_top' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.srcs/sources_1/new/Lab04_top.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'period_enb' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/period_enb.sv:20]
+	Parameter PERIOD_MS bound to: 1000 - type: integer 
+	Parameter PERIOD_US bound to: 1000000 - type: integer 
+	Parameter PERIOD_NS bound to: 1000000000 - type: integer 
+	Parameter CLKFREQ_MHZ bound to: 100 - type: integer 
+	Parameter CLKPD_NS bound to: 10 - type: integer 
+	Parameter PERIOD_COUNT_LIMIT bound to: 100000000 - type: integer 
+	Parameter PERIOD_COUNT_BITS bound to: 27 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'period_enb' (1#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/period_enb.sv:20]
+WARNING: [Synth 8-7071] port 'clr' of module 'period_enb' is unconnected for instance 'U_startSwitch' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.srcs/sources_1/new/Lab04_top.sv:38]
+WARNING: [Synth 8-7023] instance 'U_startSwitch' of module 'period_enb' has 4 connections declared, but only 3 given [C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.srcs/sources_1/new/Lab04_top.sv:38]
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/counter.sv:11]
+	Parameter MOD bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter' (2#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/counter.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'dig_clock' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/dig_clock.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Users/klinez/Downloads/lab02/RTL/debouce.sv:13]
+	Parameter CLKPD_NS bound to: 10 - type: integer 
+	Parameter CLKFREQ bound to: 100000000 - type: integer 
+	Parameter DEBOUNCE_MS bound to: 10 - type: integer 
+	Parameter CTRBITS bound to: 20 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (3#1) [C:/Users/klinez/Downloads/lab02/RTL/debouce.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'single_pulser' [C:/Users/klinez/Downloads/lab02/RTL/single_pulser.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'single_pulser' (4#1) [C:/Users/klinez/Downloads/lab02/RTL/single_pulser.sv:12]
+WARNING: [Synth 8-7071] port 'clr' of module 'period_enb' is unconnected for instance 'U_per' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/dig_clock.sv:40]
+WARNING: [Synth 8-7023] instance 'U_per' of module 'period_enb' has 4 connections declared, but only 3 given [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/dig_clock.sv:40]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized0' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/counter.sv:11]
+	Parameter MOD bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized0' (4#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/counter.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized1' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/counter.sv:11]
+	Parameter MOD bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized1' (4#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/counter.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'hr_ctr' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/project/Lab 02/Lab 02.srcs/sources_1/new/hr_ctr.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'hr_ctr' (5#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/project/Lab 02/Lab 02.srcs/sources_1/new/hr_ctr.sv:23]
+WARNING: [Synth 8-689] width (4) of port connection 'h0' does not match port width (7) of module 'hr_ctr' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/dig_clock.sv:45]
+INFO: [Synth 8-6155] done synthesizing module 'dig_clock' (6#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/dig_clock.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'sevenseg_ctl' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/sevenseg_ctl.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'period_enb__parameterized0' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/period_enb.sv:20]
+	Parameter PERIOD_MS bound to: 1 - type: integer 
+	Parameter PERIOD_US bound to: 1000 - type: integer 
+	Parameter PERIOD_NS bound to: 1000000 - type: integer 
+	Parameter CLKFREQ_MHZ bound to: 100 - type: integer 
+	Parameter CLKPD_NS bound to: 10 - type: integer 
+	Parameter PERIOD_COUNT_LIMIT bound to: 100000 - type: integer 
+	Parameter PERIOD_COUNT_BITS bound to: 17 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'period_enb__parameterized0' (6#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/period_enb.sv:20]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized2' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/counter.sv:11]
+	Parameter MOD bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized2' (6#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/counter.sv:11]
+WARNING: [Synth 8-7071] port 'Carry' of module 'counter' is unconnected for instance 'U_CT' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/sevenseg_ctl.sv:36]
+WARNING: [Synth 8-7023] instance 'U_CT' of module 'counter' has 5 connections declared, but only 4 given [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/sevenseg_ctl.sv:36]
+INFO: [Synth 8-6157] synthesizing module 'dec_3_8_n' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/dec_3_8_n.sv:11]
+INFO: [Synth 8-226] default block is never used [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/dec_3_8_n.sv:19]
+INFO: [Synth 8-6155] done synthesizing module 'dec_3_8_n' (7#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/dec_3_8_n.sv:11]
+WARNING: [Synth 8-689] width (4) of port connection 'a' does not match port width (3) of module 'dec_3_8_n' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/sevenseg_ctl.sv:38]
+INFO: [Synth 8-6157] synthesizing module 'mux8' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/mux8.sv:11]
+	Parameter W bound to: 7 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/mux8.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'mux8' (8#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/mux8.sv:11]
+WARNING: [Synth 8-689] width (4) of port connection 'sel' does not match port width (3) of module 'mux8' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/sevenseg_ctl.sv:40]
+INFO: [Synth 8-6157] synthesizing module 'sevenseg_ext_n' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/sevenseg_ext_n.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'sevenseg_ext_n' (9#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/sevenseg_ext_n.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'sevenseg_ctl' (10#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/sevenseg_ctl.sv:18]
+WARNING: [Synth 8-7071] port 'dp_disp' of module 'sevenseg_ctl' is unconnected for instance 'U_sevseg' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.srcs/sources_1/new/Lab04_top.sv:243]
+WARNING: [Synth 8-7023] instance 'U_sevseg' of module 'sevenseg_ctl' has 14 connections declared, but only 13 given [C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.srcs/sources_1/new/Lab04_top.sv:243]
+INFO: [Synth 8-6157] synthesizing module 'tdisplay' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.srcs/sources_1/new/tdisplay.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'tconvert' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.srcs/sources_1/new/tconvert.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'tconvert' (11#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.srcs/sources_1/new/tconvert.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'conv_sgnmag' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.srcs/sources_1/new/conv_sgnmag.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'conv_sgnmag' (12#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.srcs/sources_1/new/conv_sgnmag.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'round' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.srcs/sources_1/new/round.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'round' (13#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.srcs/sources_1/new/round.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'dbl_dabble_ext' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:15]
+INFO: [Synth 8-251] dbl_dabble input: x [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:22]
+INFO: [Synth 8-251] add3o 4 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 5 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 6 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 7 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 7 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:33]
+INFO: [Synth 8-251] add3o 8 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 8 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:33]
+INFO: [Synth 8-251] add3o 9 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 9 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:33]
+INFO: [Synth 8-251] add3o 10 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 10 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:33]
+INFO: [Synth 8-251] add3o 10 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:37]
+INFO: [Synth 8-251] add3o 11 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 11 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:33]
+INFO: [Synth 8-251] add3o 11 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:37]
+INFO: [Synth 8-251] add3o 12 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 12 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:33]
+INFO: [Synth 8-251] add3o 12 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:37]
+INFO: [Synth 8-251] add3o 13 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 13 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:33]
+INFO: [Synth 8-251] add3o 13 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:37]
+INFO: [Synth 8-251] add3o 13 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:41]
+INFO: [Synth 8-251] result    x    x   x   x [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:45]
+INFO: [Synth 8-6155] done synthesizing module 'dbl_dabble_ext' (14#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:15]
+INFO: [Synth 8-6155] done synthesizing module 'tdisplay' (15#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.srcs/sources_1/new/tdisplay.sv:23]
+INFO: [Synth 8-638] synthesizing module 'TempSensorCtl' [C:/Users/klinez/Downloads/TempSensorCtl.vhd:58]
+	Parameter CLOCKFREQ bound to: 100 - type: integer 
+	Parameter CLOCKFREQ bound to: 100 - type: integer 
+	Parameter ATTEMPT_SLAVE_UNBLOCK bound to: 1 - type: bool 
+INFO: [Synth 8-3491] module 'TWICtl' declared at 'C:/Users/klinez/Downloads/TWICtl.vhd:68' bound to instance 'Inst_TWICtl' of component 'TWICtl' [C:/Users/klinez/Downloads/TempSensorCtl.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'TWICtl' [C:/Users/klinez/Downloads/TWICtl.vhd:132]
+	Parameter CLOCKFREQ bound to: 100 - type: integer 
+	Parameter ATTEMPT_SLAVE_UNBLOCK bound to: 1 - type: bool 
+INFO: [Synth 8-226] default block is never used [C:/Users/klinez/Downloads/TWICtl.vhd:357]
+INFO: [Synth 8-226] default block is never used [C:/Users/klinez/Downloads/TWICtl.vhd:375]
+INFO: [Synth 8-226] default block is never used [C:/Users/klinez/Downloads/TWICtl.vhd:393]
+INFO: [Synth 8-226] default block is never used [C:/Users/klinez/Downloads/TWICtl.vhd:411]
+INFO: [Synth 8-226] default block is never used [C:/Users/klinez/Downloads/TWICtl.vhd:429]
+INFO: [Synth 8-226] default block is never used [C:/Users/klinez/Downloads/TWICtl.vhd:447]
+WARNING: [Synth 8-614] signal 'timeOutCnt' is read in the process but is not in the sensitivity list [C:/Users/klinez/Downloads/TWICtl.vhd:500]
+INFO: [Synth 8-256] done synthesizing module 'TWICtl' (16#1) [C:/Users/klinez/Downloads/TWICtl.vhd:132]
+INFO: [Synth 8-226] default block is never used [C:/Users/klinez/Downloads/TempSensorCtl.vhd:328]
+WARNING: [Synth 8-614] signal 'initA' is read in the process but is not in the sensitivity list [C:/Users/klinez/Downloads/TempSensorCtl.vhd:323]
+INFO: [Synth 8-256] done synthesizing module 'TempSensorCtl' (17#1) [C:/Users/klinez/Downloads/TempSensorCtl.vhd:58]
+INFO: [Synth 8-6155] done synthesizing module 'Lab04_top' (18#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.srcs/sources_1/new/Lab04_top.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 3353.086 ; gain = 315.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 3370.996 ; gain = 333.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 3370.996 ; gain = 333.309
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 3370.996 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.srcs/constrs_1/new/lab03_constraints.xdc]
+Finished Parsing XDC File [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.srcs/constrs_1/new/lab03_constraints.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3483.398 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 3558.676 ; gain = 520.988
+80 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 3558.676 ; gain = 520.988
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 3627.047 ; gain = 28.734
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Lab04_top' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.srcs/sources_1/new/Lab04_top.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'period_enb' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/period_enb.sv:20]
+	Parameter PERIOD_MS bound to: 1000 - type: integer 
+	Parameter PERIOD_US bound to: 1000000 - type: integer 
+	Parameter PERIOD_NS bound to: 1000000000 - type: integer 
+	Parameter CLKFREQ_MHZ bound to: 100 - type: integer 
+	Parameter CLKPD_NS bound to: 10 - type: integer 
+	Parameter PERIOD_COUNT_LIMIT bound to: 100000000 - type: integer 
+	Parameter PERIOD_COUNT_BITS bound to: 27 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'period_enb' (1#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/period_enb.sv:20]
+WARNING: [Synth 8-7071] port 'clr' of module 'period_enb' is unconnected for instance 'U_startSwitch' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.srcs/sources_1/new/Lab04_top.sv:38]
+WARNING: [Synth 8-7023] instance 'U_startSwitch' of module 'period_enb' has 4 connections declared, but only 3 given [C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.srcs/sources_1/new/Lab04_top.sv:38]
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/counter.sv:11]
+	Parameter MOD bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter' (2#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/counter.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'dig_clock' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/dig_clock.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Users/klinez/Downloads/lab02/RTL/debouce.sv:13]
+	Parameter CLKPD_NS bound to: 10 - type: integer 
+	Parameter CLKFREQ bound to: 100000000 - type: integer 
+	Parameter DEBOUNCE_MS bound to: 10 - type: integer 
+	Parameter CTRBITS bound to: 20 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (3#1) [C:/Users/klinez/Downloads/lab02/RTL/debouce.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'single_pulser' [C:/Users/klinez/Downloads/lab02/RTL/single_pulser.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'single_pulser' (4#1) [C:/Users/klinez/Downloads/lab02/RTL/single_pulser.sv:12]
+WARNING: [Synth 8-7071] port 'clr' of module 'period_enb' is unconnected for instance 'U_per' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/dig_clock.sv:40]
+WARNING: [Synth 8-7023] instance 'U_per' of module 'period_enb' has 4 connections declared, but only 3 given [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/dig_clock.sv:40]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized0' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/counter.sv:11]
+	Parameter MOD bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized0' (4#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/counter.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized1' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/counter.sv:11]
+	Parameter MOD bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized1' (4#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/counter.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'hr_ctr' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/project/Lab 02/Lab 02.srcs/sources_1/new/hr_ctr.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'hr_ctr' (5#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/project/Lab 02/Lab 02.srcs/sources_1/new/hr_ctr.sv:23]
+WARNING: [Synth 8-689] width (4) of port connection 'h0' does not match port width (7) of module 'hr_ctr' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/dig_clock.sv:45]
+INFO: [Synth 8-6155] done synthesizing module 'dig_clock' (6#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/dig_clock.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'sevenseg_ctl' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/sevenseg_ctl.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'period_enb__parameterized0' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/period_enb.sv:20]
+	Parameter PERIOD_MS bound to: 1 - type: integer 
+	Parameter PERIOD_US bound to: 1000 - type: integer 
+	Parameter PERIOD_NS bound to: 1000000 - type: integer 
+	Parameter CLKFREQ_MHZ bound to: 100 - type: integer 
+	Parameter CLKPD_NS bound to: 10 - type: integer 
+	Parameter PERIOD_COUNT_LIMIT bound to: 100000 - type: integer 
+	Parameter PERIOD_COUNT_BITS bound to: 17 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'period_enb__parameterized0' (6#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/period_enb.sv:20]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized2' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/counter.sv:11]
+	Parameter MOD bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized2' (6#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/counter.sv:11]
+WARNING: [Synth 8-7071] port 'Carry' of module 'counter' is unconnected for instance 'U_CT' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/sevenseg_ctl.sv:36]
+WARNING: [Synth 8-7023] instance 'U_CT' of module 'counter' has 5 connections declared, but only 4 given [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/sevenseg_ctl.sv:36]
+INFO: [Synth 8-6157] synthesizing module 'dec_3_8_n' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/dec_3_8_n.sv:11]
+INFO: [Synth 8-226] default block is never used [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/dec_3_8_n.sv:19]
+INFO: [Synth 8-6155] done synthesizing module 'dec_3_8_n' (7#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/dec_3_8_n.sv:11]
+WARNING: [Synth 8-689] width (4) of port connection 'a' does not match port width (3) of module 'dec_3_8_n' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/sevenseg_ctl.sv:38]
+INFO: [Synth 8-6157] synthesizing module 'mux8' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/mux8.sv:11]
+	Parameter W bound to: 7 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/mux8.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'mux8' (8#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/mux8.sv:11]
+WARNING: [Synth 8-689] width (4) of port connection 'sel' does not match port width (3) of module 'mux8' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/sevenseg_ctl.sv:40]
+INFO: [Synth 8-6157] synthesizing module 'sevenseg_ext_n' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/sevenseg_ext_n.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'sevenseg_ext_n' (9#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/sevenseg_ext_n.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'sevenseg_ctl' (10#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 02/hdl/sevenseg_ctl.sv:18]
+WARNING: [Synth 8-7071] port 'dp_disp' of module 'sevenseg_ctl' is unconnected for instance 'U_sevseg' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.srcs/sources_1/new/Lab04_top.sv:243]
+WARNING: [Synth 8-7023] instance 'U_sevseg' of module 'sevenseg_ctl' has 14 connections declared, but only 13 given [C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.srcs/sources_1/new/Lab04_top.sv:243]
+INFO: [Synth 8-6157] synthesizing module 'tdisplay' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.srcs/sources_1/new/tdisplay.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'tconvert' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.srcs/sources_1/new/tconvert.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'tconvert' (11#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.srcs/sources_1/new/tconvert.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'conv_sgnmag' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.srcs/sources_1/new/conv_sgnmag.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'conv_sgnmag' (12#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.srcs/sources_1/new/conv_sgnmag.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'round' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.srcs/sources_1/new/round.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'round' (13#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.srcs/sources_1/new/round.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'dbl_dabble_ext' [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:15]
+INFO: [Synth 8-251] dbl_dabble input: x [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:22]
+INFO: [Synth 8-251] add3o 4 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 5 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 6 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 7 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 7 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:33]
+INFO: [Synth 8-251] add3o 8 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 8 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:33]
+INFO: [Synth 8-251] add3o 9 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 9 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:33]
+INFO: [Synth 8-251] add3o 10 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 10 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:33]
+INFO: [Synth 8-251] add3o 10 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:37]
+INFO: [Synth 8-251] add3o 11 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 11 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:33]
+INFO: [Synth 8-251] add3o 11 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:37]
+INFO: [Synth 8-251] add3o 12 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 12 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:33]
+INFO: [Synth 8-251] add3o 12 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:37]
+INFO: [Synth 8-251] add3o 13 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 13 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:33]
+INFO: [Synth 8-251] add3o 13 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:37]
+INFO: [Synth 8-251] add3o 13 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:41]
+INFO: [Synth 8-251] result    x    x   x   x [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:45]
+INFO: [Synth 8-6155] done synthesizing module 'dbl_dabble_ext' (14#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/hdl/dbl_dabble_ext.sv:15]
+INFO: [Synth 8-6155] done synthesizing module 'tdisplay' (15#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.srcs/sources_1/new/tdisplay.sv:23]
+INFO: [Synth 8-638] synthesizing module 'TempSensorCtl' [C:/Users/klinez/Downloads/TempSensorCtl.vhd:58]
+	Parameter CLOCKFREQ bound to: 100 - type: integer 
+	Parameter CLOCKFREQ bound to: 100 - type: integer 
+	Parameter ATTEMPT_SLAVE_UNBLOCK bound to: 1 - type: bool 
+INFO: [Synth 8-3491] module 'TWICtl' declared at 'C:/Users/klinez/Downloads/TWICtl.vhd:68' bound to instance 'Inst_TWICtl' of component 'TWICtl' [C:/Users/klinez/Downloads/TempSensorCtl.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'TWICtl' [C:/Users/klinez/Downloads/TWICtl.vhd:132]
+	Parameter CLOCKFREQ bound to: 100 - type: integer 
+	Parameter ATTEMPT_SLAVE_UNBLOCK bound to: 1 - type: bool 
+INFO: [Synth 8-226] default block is never used [C:/Users/klinez/Downloads/TWICtl.vhd:357]
+INFO: [Synth 8-226] default block is never used [C:/Users/klinez/Downloads/TWICtl.vhd:375]
+INFO: [Synth 8-226] default block is never used [C:/Users/klinez/Downloads/TWICtl.vhd:393]
+INFO: [Synth 8-226] default block is never used [C:/Users/klinez/Downloads/TWICtl.vhd:411]
+INFO: [Synth 8-226] default block is never used [C:/Users/klinez/Downloads/TWICtl.vhd:429]
+INFO: [Synth 8-226] default block is never used [C:/Users/klinez/Downloads/TWICtl.vhd:447]
+WARNING: [Synth 8-614] signal 'timeOutCnt' is read in the process but is not in the sensitivity list [C:/Users/klinez/Downloads/TWICtl.vhd:500]
+INFO: [Synth 8-256] done synthesizing module 'TWICtl' (16#1) [C:/Users/klinez/Downloads/TWICtl.vhd:132]
+INFO: [Synth 8-226] default block is never used [C:/Users/klinez/Downloads/TempSensorCtl.vhd:328]
+WARNING: [Synth 8-614] signal 'initA' is read in the process but is not in the sensitivity list [C:/Users/klinez/Downloads/TempSensorCtl.vhd:323]
+INFO: [Synth 8-256] done synthesizing module 'TempSensorCtl' (17#1) [C:/Users/klinez/Downloads/TempSensorCtl.vhd:58]
+INFO: [Synth 8-6155] done synthesizing module 'Lab04_top' (18#1) [C:/Users/klinez/ECE212_Kline_Wurm/Lab 04/project/project_1/project_1.srcs/sources_1/new/Lab04_top.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 3687.828 ; gain = 89.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 3711.734 ; gain = 113.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 3711.734 ; gain = 113.422
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 3727.453 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.srcs/constrs_1/new/lab03_constraints.xdc]
+Finished Parsing XDC File [C:/Users/klinez/ECE212_Kline_Wurm/Lab 03/project/Lab03/Lab03.srcs/constrs_1/new/lab03_constraints.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 3743.930 ; gain = 145.617
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 26 10:42:37 2023...
