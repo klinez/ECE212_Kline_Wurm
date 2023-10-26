@@ -16,7 +16,7 @@
 //-----------------------------------------------------------------------------
 
 module sevenseg_ctl(
-    input logic clk, rst, dp_disp,
+    input logic clk, rst,
     input logic [6:0] d7, d6, d5, d4, d3, d2, d1, d0,
     output logic [6:0] segs_n,
     output logic dp_n,
@@ -24,12 +24,10 @@ module sevenseg_ctl(
     );
 
     logic enb, clr;
-    logic [3:0] digit;
+    logic [2:0] digit;  // count of current digit
     logic [6:0] muxd;
 
     assign clr = 1'b0;
-
-    
 
     period_enb #(.PERIOD_MS(1)) U_ENB(.clk, .rst, .clr, .enb_out(enb));
 
@@ -40,7 +38,5 @@ module sevenseg_ctl(
     mux8 #(.W(7)) U_MUX8 (.sel(digit), .d0, .d1, .d2, .d3, .d4, .d5, .d6, .d7, .y(muxd));
 
     sevenseg_ext_n U_SSEG (.d(muxd), .segs_n, .dp_n);
-    
-
 
 endmodule
