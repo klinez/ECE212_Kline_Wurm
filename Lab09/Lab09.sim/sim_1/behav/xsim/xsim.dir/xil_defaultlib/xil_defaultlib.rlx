@@ -1,0 +1,15 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Users/klinez/ECE212_Kline_Wurm/Lab09/Lab09.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,uvm,,,,,,
+C:/Users/klinez/ECE212_Kline_Wurm/Lab09/Lab09.srcs/sim_1/new/controller_tb.sv,1702588230,systemVerilog,,,,controller_tb,,uvm,,,,,,
+C:/Users/klinez/ECE212_Kline_Wurm/Lab09/mips_L_multi-main/sv/aludec.sv,1702574419,systemVerilog,,C:/Users/klinez/ECE212_Kline_Wurm/Lab09/mips_L_multi-main/sv/controller.sv,,aludec,,uvm,,,,,,
+C:/Users/klinez/ECE212_Kline_Wurm/Lab09/mips_L_multi-main/sv/controller.sv,1702574420,systemVerilog,,C:/Users/klinez/ECE212_Kline_Wurm/Lab09/mips_L_multi-main/sv/maindec.sv,,controller,,uvm,,,,,,
+C:/Users/klinez/ECE212_Kline_Wurm/Lab09/mips_L_multi-main/sv/datapath.sv,1702570832,systemVerilog,,C:/Users/klinez/ECE212_Kline_Wurm/Lab09/mips_L_multi-main/sv/maindec.sv,,datapath,,uvm,,,,,,
+C:/Users/klinez/ECE212_Kline_Wurm/Lab09/mips_L_multi-main/sv/maindec.sv,1702584628,systemVerilog,,C:/Users/klinez/ECE212_Kline_Wurm/Lab09/Lab09.srcs/sim_1/new/controller_tb.sv,,maindec,,uvm,,,,,,
+C:/Users/klinez/ECE212_Kline_Wurm/Lab09/mips_L_multi-main/sv/mem.sv,1702570832,systemVerilog,,C:/Users/klinez/ECE212_Kline_Wurm/Lab09/mips_L_multi-main/sv/mips_multi.sv,,mem,,uvm,,,,,,
+C:/Users/klinez/ECE212_Kline_Wurm/Lab09/mips_L_multi-main/sv/mips_decls_p.sv,1702570832,systemVerilog,C:/Users/klinez/ECE212_Kline_Wurm/Lab09/Lab09.srcs/sim_1/new/controller_tb.sv;C:/Users/klinez/ECE212_Kline_Wurm/Lab09/mips_L_multi-main/sv/aludec.sv;C:/Users/klinez/ECE212_Kline_Wurm/Lab09/mips_L_multi-main/sv/controller.sv;C:/Users/klinez/ECE212_Kline_Wurm/Lab09/mips_L_multi-main/sv/maindec.sv,C:/Users/klinez/ECE212_Kline_Wurm/Lab09/mips_L_multi-main/sv/aludec.sv,,mips_decls_p,,uvm,,,,,,
+C:/Users/klinez/ECE212_Kline_Wurm/Lab09/mips_L_multi-main/sv/mips_multi.sv,1702570832,systemVerilog,,C:/Users/klinez/ECE212_Kline_Wurm/Lab09/mips_L_multi-main/sv/mips_multi_top.sv,,mips_multi,,uvm,,,,,,
+C:/Users/klinez/ECE212_Kline_Wurm/Lab09/mips_L_multi-main/sv/mips_multi_top.sv,1702570832,systemVerilog,,C:/Users/klinez/ECE212_Kline_Wurm/Lab09/mips_L_multi-main/sv/testbench.sv,,mips_multi_top,,uvm,,,,,,
+C:/Users/klinez/ECE212_Kline_Wurm/Lab09/mips_L_multi-main/sv/testbench.sv,1702570832,systemVerilog,,,,testbench,,uvm,,,,,,
