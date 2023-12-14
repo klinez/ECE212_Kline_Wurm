@@ -1,0 +1,36 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b27c30be4162437a97dcf814eaf844d7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 5 for port 'y' [C:/Users/klinez/ECE212_Kline_Wurm/Lab10/mips_L_multi-main/sv/datapath.sv:56]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 5 for port 'wa3' [C:/Users/klinez/ECE212_Kline_Wurm/Lab10/mips_L_multi-main/sv/datapath.sv:63]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'd' [C:/Users/klinez/ECE212_Kline_Wurm/Lab10/mips_L_multi-main/sv/datapath.sv:72]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Users/klinez/ECE212_Kline_Wurm/Lab10/Lab10.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/klinez/ECE212_Kline_Wurm/Lab10/Lab10.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.mips_decls_p
+Compiling module xil_defaultlib.maindec
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.flopenr(WIDTH=32)
+Compiling module xil_defaultlib.mux2(WIDTH=32)
+Compiling module xil_defaultlib.mux2(WIDTH=5)
+Compiling module xil_defaultlib.flopr(WIDTH=32)
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.mux4
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.flopr
+Compiling module xil_defaultlib.mux3
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.mips_multi
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mips_multi_top
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
