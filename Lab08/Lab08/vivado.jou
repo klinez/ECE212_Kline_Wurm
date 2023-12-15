@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Dec 15 14:14:40 2023
+# Process ID: 20968
+# Current directory: C:/Users/klinez/ECE212_Kline_Wurm/Lab08/Lab08
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10228 C:\Users\klinez\ECE212_Kline_Wurm\Lab08\Lab08\Lab08.xpr
+# Log file: C:/Users/klinez/ECE212_Kline_Wurm/Lab08/Lab08/vivado.log
+# Journal file: C:/Users/klinez/ECE212_Kline_Wurm/Lab08/Lab08\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/klinez/ECE212_Kline_Wurm/Lab08/Lab08/Lab08.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/klinez/ECE212_Kline_Wurm/Lab08/Lab08/testbench_behav.wcfg
+source testbench.tcl
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/src/test2.s
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/src/test2.dat
+close_sim
+launch_simulation
+open_wave_config C:/Users/klinez/ECE212_Kline_Wurm/Lab08/Lab08/testbench_behav.wcfg
+source testbench.tcl
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/src/test3.dat
+close_sim
+launch_simulation
+open_wave_config C:/Users/klinez/ECE212_Kline_Wurm/Lab08/Lab08/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/klinez/ECE212_Kline_Wurm/Lab08/Lab08/testbench_behav.wcfg
+source testbench.tcl
+close_sim

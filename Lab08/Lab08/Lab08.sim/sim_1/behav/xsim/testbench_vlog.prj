@@ -1,0 +1,25 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../mips_L_single-master/mips_L_single-master/sv/adder.sv" \
+"../../../../../mips_L_single-master/mips_L_single-master/sv/alu.sv" \
+"../../../../../mips_L_single-master/mips_L_single-master/sv/mips_decls_p.sv" \
+"../../../../../mips_L_single-master/mips_L_single-master/sv/aludec.sv" \
+"../../../../../mips_L_single-master/mips_L_single-master/sv/controller.sv" \
+"../../../../../mips_L_single-master/mips_L_single-master/sv/datapath.sv" \
+"../../../../../mips_L_single-master/mips_L_single-master/sv/dmem.sv" \
+"../../../../../mips_L_single-master/mips_L_single-master/sv/flopr.sv" \
+"../../../../../mips_L_single-master/mips_L_single-master/sv/imem.sv" \
+"../../../../../mips_L_single-master/mips_L_single-master/sv/maindec.sv" \
+"../../../../../mips_L_single-master/mips_L_single-master/sv/mips.sv" \
+"../../../../../mips_L_single-master/mips_L_single-master/sv/mux2.sv" \
+"../../../../../mips_L_single-master/mips_L_single-master/sv/regfile.sv" \
+"../../../../../mips_L_single-master/mips_L_single-master/sv/signext.sv" \
+"../../../../../mips_L_single-master/mips_L_single-master/sv/sl2.sv" \
+"../../../../../mips_L_single-master/mips_L_single-master/sv/top.sv" \
+"../../../../../mips_L_single-master/mips_L_single-master/sv/testbench.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

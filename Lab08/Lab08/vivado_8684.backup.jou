@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Dec 14 12:55:09 2023
+# Process ID: 8684
+# Current directory: C:/Users/klinez/ECE212_Kline_Wurm/Lab08/Lab08
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16168 C:\Users\klinez\ECE212_Kline_Wurm\Lab08\Lab08\Lab08.xpr
+# Log file: C:/Users/klinez/ECE212_Kline_Wurm/Lab08/Lab08/vivado.log
+# Journal file: C:/Users/klinez/ECE212_Kline_Wurm/Lab08/Lab08\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/klinez/ECE212_Kline_Wurm/Lab08/Lab08/Lab08.xpr
+update_compile_order -fileset sources_1

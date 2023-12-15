@@ -1,0 +1,22 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Users/klinez/ECE212_Kline_Wurm/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,uvm,,,,,,
+C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/sv/adder.sv,1701954716,systemVerilog,,C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/sv/alu.sv,,adder,,uvm,,,,,,
+C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/sv/alu.sv,1701954716,systemVerilog,,C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/sv/mips_decls_p.sv,,alu,,uvm,,,,,,
+C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/sv/aludec.sv,1702670276,systemVerilog,,C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/sv/controller.sv,,aludec,,uvm,,,,,,
+C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/sv/controller.sv,1701954716,systemVerilog,,C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/sv/datapath.sv,,controller,,uvm,,,,,,
+C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/sv/datapath.sv,1701954716,systemVerilog,,C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/sv/dmem.sv,,datapath,,uvm,,,,,,
+C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/sv/dmem.sv,1701954716,systemVerilog,,C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/sv/flopr.sv,,dmem,,uvm,,,,,,
+C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/sv/flopr.sv,1701954716,systemVerilog,,C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/sv/imem.sv,,flopr,,uvm,,,,,,
+C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/sv/imem.sv,1702673238,systemVerilog,,C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/sv/maindec.sv,,imem,,uvm,,,,,,
+C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/sv/maindec.sv,1701954716,systemVerilog,,C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/sv/mips.sv,,maindec,,uvm,,,,,,
+C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/sv/mips.sv,1701954716,systemVerilog,,C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/sv/mux2.sv,,mips,,uvm,,,,,,
+C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/sv/mips_decls_p.sv,1701954716,systemVerilog,C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/sv/aludec.sv;C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/sv/controller.sv;C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/sv/maindec.sv;C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/sv/mips.sv,C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/sv/aludec.sv,,mips_decls_p,,uvm,,,,,,
+C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/sv/mux2.sv,1701954716,systemVerilog,,C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/sv/regfile.sv,,mux2,,uvm,,,,,,
+C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/sv/regfile.sv,1701954716,systemVerilog,,C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/sv/signext.sv,,regfile,,uvm,,,,,,
+C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/sv/signext.sv,1701954716,systemVerilog,,C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/sv/sl2.sv,,signext,,uvm,,,,,,
+C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/sv/sl2.sv,1701954716,systemVerilog,,C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/sv/top.sv,,sl2,,uvm,,,,,,
+C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/sv/testbench.sv,1701958583,systemVerilog,,,,testbench,,uvm,,,,,,
+C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/sv/top.sv,1701954716,systemVerilog,,C:/Users/klinez/ECE212_Kline_Wurm/Lab08/mips_L_single-master/mips_L_single-master/sv/testbench.sv,,top,,uvm,,,,,,
